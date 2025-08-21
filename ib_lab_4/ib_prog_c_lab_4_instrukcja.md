@@ -11,3 +11,5 @@ W tym laboratorium będziemy pracować z językiem C i jego podstawowymi konstru
 6. **Zadanie 6**: Napisz program, który pobiera od użytkownika liczbę całkowitą i wyp
 
 <span style="color:blue">some *blue* text</span>
+
+$${\color{red}Red}$$
