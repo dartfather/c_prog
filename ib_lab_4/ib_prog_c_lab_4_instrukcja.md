@@ -1,5 +1,11 @@
 ![alt text](images/fers_header.jpg "Title") 
 # Instrukcja do Laboratorium 4
+
+#### Spis treści
+- [Wprowadzenie](#wprowadzenie)
+- [Zadania](#zadania)
+- [Podsumowanie](#podsumowanie)
+
 ## Wprowadzenie
 W tym laboratorium będziemy pracować z językiem C i jego podstawowymi konstrukcjami. C jest językiem programowania niskiego poziomu, który pozwala na bezpośrednią manipulację pamięcią i sprzętem. Jest to język, który jest często używany do pisania systemów operacyjnych, sterowników urządzeń i innych programów,         które wymagają bezpośredniego dostępu do sprzętu. W tym laboratorium będziemy pracować z podstawowymi konstrukcjami języka C, takimi jak zmienne, operatory, instrukcje warunkowe i pętle.
 ## Zadania
@@ -16,6 +22,7 @@ W tym laboratorium będziemy pracować z językiem C i jego podstawowymi konstru
 
 $${\color{red}Red}$$
 
+## Podsumowanie
 
 --
 Markdown hacks:
