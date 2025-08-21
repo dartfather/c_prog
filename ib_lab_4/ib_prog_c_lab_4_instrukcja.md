@@ -10,6 +10,7 @@ W tym laboratorium będziemy pracować z językiem C i jego podstawowymi konstru
 5. **Zadanie 5**: Napisz program, który pobiera od użytkownika liczbę całkowitą i wypisuje jej silnię.
 6. **Zadanie 6**: Napisz program, który pobiera od użytkownika liczbę całkowitą i wyp
 
-<span style="color:blue">some *blue* text</span>
+<font color="red">This text is red!</font>
+
 
 $${\color{red}Red}$$
