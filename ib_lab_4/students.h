@@ -1,10 +1,10 @@
 #define NAME_CHAR_LIMIT 50
 
 // Student structure
-struct student_t {
+struct student_t
+{
     int album;
     char name[NAME_CHAR_LIMIT];
-    int course_id;
     int grade;
 };
 

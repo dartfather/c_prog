@@ -4,46 +4,54 @@
 #include "students.h"
 
 // List all students
-void list_students(struct student_t *students, int count) {
-    if (count == 0) {
+void list_students(struct student_t *students, int count)
+{
+    if (count == 0)
+    {
         printf("No students available.\n");
         return;
     }
     printf("\nList of Students:\n");
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < count; i++)
+    {
         printf("Album no.: %d | Name: %s | Grade: %d\n",
                students[i].album, students[i].name, students[i].grade);
     }
 }
 
 // Add a new student
-void add_student(struct student_t **students, int *count) {
+/* We are using double pointer to modify the students array*/
+void add_student(struct student_t **students, int *count)
+{
     *students = realloc(*students, (*count + 1) * sizeof(struct student_t));
-    if (*students == NULL) {
+    if (*students == NULL)
+    {
         printf("Memory allocation failed!\n");
         exit(1);
     }
 
-    struct student_t *newStudent = &(*students)[*count];
+    struct student_t *new_student = &(*students)[*count];
 
     printf("Enter student album no.: ");
-    scanf("%d", &newStudent->album);
+    scanf("%d", &new_student->album);
     getchar();
 
     printf("Enter student name: ");
-    fgets(newStudent->name, NAME_CHAR_LIMIT, stdin);
-    newStudent->name[strcspn(newStudent->name, "\n")] = '\0'; // remove newline
+    fgets(new_student->name, NAME_CHAR_LIMIT, stdin);
+    new_student->name[strcspn(new_student->name, "\n")] = '\0'; // remove newline
 
     printf("Enter student grade: ");
-    scanf("%d", &newStudent->grade);
+    scanf("%d", &new_student->grade);
 
     (*count)++;
     printf("Student added successfully.\n");
 }
 
 // Delete a student by ID
-void delete_student(struct student_t *students, int *count) {
-    if (*count == 0) {
+void delete_student(struct student_t *students, int *count)
+{
+    if (*count == 0)
+    {
         printf("No students to delete.\n");
         return;
     }
@@ -53,20 +61,24 @@ void delete_student(struct student_t *students, int *count) {
     scanf("%d", &album_tmp);
 
     int found = -1;
-    for (int i = 0; i < *count; i++) {
-        if (students[i].album == album_tmp) {
+    for (int i = 0; i < *count; i++)
+    {
+        if (students[i].album == album_tmp)
+        {
             found = i;
             break;
         }
     }
 
-    if (found == -1) {
+    if (found == -1)
+    {
         printf("Student with album no. %d not found.\n", album_tmp);
         return;
     }
 
     // Shift students left
-    for (int i = found; i < *count - 1; i++) {
+    for (int i = found; i < *count - 1; i++)
+    {
         students[i] = students[i + 1];
     }
     (*count)--;
@@ -75,8 +87,10 @@ void delete_student(struct student_t *students, int *count) {
 }
 
 // Change student details by ID
-void change_student(struct student_t *students, int count) {
-    if (count == 0) {
+void change_student(struct student_t *students, int count)
+{
+    if (count == 0)
+    {
         printf("No students to change.\n");
         return;
     }
@@ -87,14 +101,17 @@ void change_student(struct student_t *students, int count) {
     getchar();
 
     int found = -1;
-    for (int i = 0; i < count; i++) {
-        if (students[i].album == album_tmp) {
+    for (int i = 0; i < count; i++)
+    {
+        if (students[i].album == album_tmp)
+        {
             found = i;
             break;
         }
     }
 
-    if (found == -1) {
+    if (found == -1)
+    {
         printf("Student with album no. %d not found.\n", album_tmp);
         return;
     }
