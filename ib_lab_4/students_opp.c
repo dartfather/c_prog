@@ -1,70 +1,10 @@
-/* 
-Introduction to programming
-IB course: arrays
-*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-#define NAME_CHAR_LIMIT 50
-
-// Student structure
-struct student_t {
-    int album;
-    char name[NAME_CHAR_LIMIT];
-    int course_id;
-    int grade;
-};
-
-// Function prototypes
-void listStudents(struct student_t *students, int count);
-void addStudent(struct student_t **students, int *count);
-void deleteStudent(struct student_t *students, int *count);
-void changeStudent(struct student_t *students, int count);
-
-int main() {
-    struct student_t *students = NULL;
-    int count = 0;
-    int choice;
-
-    do {
-        printf("\n===== Student Management Menu =====\n");
-        printf("1. List all students\n");
-        printf("2. Add new student\n");
-        printf("3. Delete student\n");
-        printf("4. Change student\n");
-        printf("5. Exit\n");
-        printf("Choose an option: ");
-        scanf("%d", &choice);
-        getchar(); // clear newline from buffer
-
-        switch (choice) {
-            case 1:
-                listStudents(students, count);
-                break;
-            case 2:
-                addStudent(&students, &count);
-                break;
-            case 3:
-                deleteStudent(students, &count);
-                break;
-            case 4:
-                changeStudent(students, count);
-                break;
-            case 5:
-                printf("Exiting program...\n");
-                break;
-            default:
-                printf("Invalid choice! Try again.\n");
-        }
-    } while (choice != 5);
-
-    free(students);
-    return 0;
-}
+#include "students.h"
 
 // List all students
-void listStudents(struct student_t *students, int count) {
+void list_students(struct student_t *students, int count) {
     if (count == 0) {
         printf("No students available.\n");
         return;
@@ -77,7 +17,7 @@ void listStudents(struct student_t *students, int count) {
 }
 
 // Add a new student
-void addStudent(struct student_t **students, int *count) {
+void add_student(struct student_t **students, int *count) {
     *students = realloc(*students, (*count + 1) * sizeof(struct student_t));
     if (*students == NULL) {
         printf("Memory allocation failed!\n");
@@ -102,7 +42,7 @@ void addStudent(struct student_t **students, int *count) {
 }
 
 // Delete a student by ID
-void deleteStudent(struct student_t *students, int *count) {
+void delete_student(struct student_t *students, int *count) {
     if (*count == 0) {
         printf("No students to delete.\n");
         return;
@@ -135,7 +75,7 @@ void deleteStudent(struct student_t *students, int *count) {
 }
 
 // Change student details by ID
-void changeStudent(struct student_t *students, int count) {
+void change_student(struct student_t *students, int count) {
     if (count == 0) {
         printf("No students to change.\n");
         return;
