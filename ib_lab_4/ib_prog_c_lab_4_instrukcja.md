@@ -10,7 +10,13 @@ W tym laboratorium będziemy pracować z językiem C i jego podstawowymi konstru
 5. **Zadanie 5**: Napisz program, który pobiera od użytkownika liczbę całkowitą i wypisuje jej silnię.
 6. **Zadanie 6**: Napisz program, który pobiera od użytkownika liczbę całkowitą i wyp
 
-<font color="red">This text is red!</font>
+<p style="color:blue">Make this text blue.</p>
+
 
 
 $${\color{red}Red}$$
+
+
+--
+Markdown hacks:
+https://www.markdownguide.org/hacks/
