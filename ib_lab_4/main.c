@@ -11,7 +11,6 @@ Zasoby:
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "students.h"
 
 int main()
