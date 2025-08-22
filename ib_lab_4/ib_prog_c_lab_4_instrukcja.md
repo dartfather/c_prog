@@ -1,4 +1,4 @@
-![alt text](images/fers_header.jpg "Title") 
+![loga programu FERS](images/fers_header.jpg "Title") 
 # Wprowadzenie do programowania 
 #### Instrukcja do ćwiczenia laboratoryjnego nr 4
 #### Temat: Struktury i wskaźniki w języku C
