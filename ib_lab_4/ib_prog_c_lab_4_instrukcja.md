@@ -257,7 +257,7 @@ Zasady oceniania ćwiczenia oraz zadania domowego dostępne są na stronie kursu
 
 ## Literatura pomocnicza i załączniki
 
-- Materiały z wykładów (serwis eNauczanie
+- Materiały z wykładów (serwis eNauczanie)
 - Książka: Brian W. Kernighan, Dennis M. Ritchie, "Języka ANSI C. Programowanie", Wydawnictwo Helion, 2020,
 - Dokumentacja języka C: https://en.cppreference.com/w/c
 - [Struktury w C - W3Schools](https://www.w3schools.com/c/c_structs.php)
