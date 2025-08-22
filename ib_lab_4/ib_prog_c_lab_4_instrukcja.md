@@ -2,7 +2,7 @@
 # Wprowadzenie do programowania 
 #### Instrukcja do ćwiczenia laboratoryjnego nr 4
 #### Temat: Struktury i wskaźniki w języku C
-#### Politechnika Gdańska, Wydział Elektroniki, Telekomunikacji i Informatyki, Katedra Inzynierii Biomedycznej
+#### Politechnika Gdańska, Wydział Elektroniki, Telekomunikacji i Informatyki, Katedra Inżynierii Biomedycznej
 #### Opracował: prof. dr hab. inż. Jacek Rumiński
 
 
@@ -15,7 +15,7 @@
 - [Literatura pomocnicza i załączniki](#literatura-pomocnicza-i-załączniki)
 
 ## Wprowadzenie
-Celem tego laboratorium jest utrwalenie wiedzy z wykładów oraz praktyczne zapoznanie się z ze złoonymi struktrami danych. 
+Celem tego laboratorium jest utrwalenie wiedzy z wykładów oraz praktyczne zapoznanie się z ze złożonymi struktrami danych. 
 
 W języku C wprowadzono struktury danych, które umożliwiają definicję specjalnego typu złożonego, nazwanego właśnie strukturą: struct.
 
@@ -29,19 +29,21 @@ struct student_t {
 };
 ```
 
-Słowo kluczowe "struct" razem z nazwą struktury "struct_name" stanowia nowy typ danych:
+Słowo kluczowe "struct" razem z nazwą struktury "student_t" stanowią nowy typ danych:
 
 ```C
 struct student_t  student;
 /* new type   */ /* variable */
 ``` 
 
-Typ jest złożony, ponieważ składa się z wielu zmiennych, które mogą mieć różne typy. W tym przypadku struktura `student_t` zawiera dwie zmienne: `student_index` typu `unsigned int` i `student_mark` typu `unsigned char`. Jest to jednocześnie przykład typu danych definiowanego przez użytkownika, ponieważ możemy zdefiniować własne typy danych, które będą odpowiadały naszym potrzebom. 
-Definicja złoonego typu danych wymaga, aby zawsze odnosić się do niego przez słowo kluczowe `struct` wraz z nazwą struktury: `struct student_t`. Razem te dwa elementy tworzą nowy typ danych.
-Zamiast tak długiej nazwy własnego typu danych można uprościć składnię, definiując alias dla tego typu danych za pomocą `typedef`. Przykład: `typedef struct student_t student_type;`. Wówczas moemy używać aliasu `student_type` zamiast pełnej nazwy `struct student_t`.
+Typ jest złożony, ponieważ potencjalnie składa się z wielu zmiennych, które mogą mieć różne typy. W tym przypadku struktura `student_t` zawiera dwie zmienne: `student_index` typu `unsigned int` i `student_mark` typu `unsigned char`. Jest to jednocześnie przykład typu danych definiowanego przez użytkownika, ponieważ możemy zdefiniować własne typy danych, które będą odpowiadały naszym potrzebom. 
+Definicja złożonego typu danych wymaga, aby zawsze odnosić się do niego przez słowo kluczowe `struct` wraz z nazwą struktury: `struct student_t`. Razem te dwa elementy tworzą nowy typ danych.
+Zamiast tak długiej nazwy można uprościć składnię, definiując alias dla tego typu danych za pomocą `typedef`. Przykład: `typedef struct student_t student_type;`. Wówczas możemy używać aliasu `student_type` zamiast pełnej nazwy `struct student_t`.
 
 **WYMAGANIA**
-Operacje na strukturach wraz z wykorzystaniem wskaźników zostały omówione na wykładach. Przygotowując się do ćwiczenia laboratoryjnego wymagane jest powtórzenie tych zagadnień. Zachęcamy do wykonania wszystkich przykładów z wykładów, a poprzez wprowadzanie zmian w kodzie do samodzielnego sprawdzenia działania struktur i wskaźników.
+Operacje na strukturach wraz z wykorzystaniem wskaźników zostały omówione na wykładach. 
+Przygotowując się do ćwiczenia laboratoryjnego wymagane jest powtórzenie tych zagadnień. 
+Zachęcamy do wykonania wszystkich przykładów z wykładów, a poprzez wprowadzanie zmian w kodzie do samodzielnego sprawdzenia działania struktur i wskaźników.
 
 
 #### Przebieg laboratorium
@@ -56,7 +58,7 @@ Operacje na strukturach wraz z wykorzystaniem wskaźników zostały omówione na
 
 ## Praca z przykładowym projektem wraz z wyjaśnieniami prowadzącego
 
-W ramach ćwiczenia należy przygotować projekt w języku C we wskazanym przez prowadzącego środowisku, poprzez sklonowanie projektu z repozytorium GitHub lub GitLab. 
+W ramach ćwiczenia należy przygotować projekt w języku C, we wskazanym przez prowadzącego środowisku, poprzez sklonowanie projektu z repozytorium GitHub lub GitLab. 
 
 Przykładowy projekt zawiera realizuje następujące funkcjonalności (specyfikacja wymagań):
 - Dodawanie rekordu studenta zgodnego z definicją struktury `student_t`.
@@ -216,7 +218,7 @@ W tym celu należy:
 3. Zmodyfikować funkcję `list_students()`, aby wyświetlała kod przedmiotu wraz z innymi informacjami o studencie.
 4. Przetestować zmodyfikowany program, aby upewnić się, że nowa funkcjonalność działa poprawnie.
 
-Prowadzący może zaproponować inną funkcjonalność do dodania, w zależności od potrzeb i poziomu zaawansowania studentów.
+Prowadzący może zaproponować inną funkcjonalność do dodania (np. sprawdzanie poprawności wprowadzonych danych, itp.), w zależności od potrzeb i poziomu zaawansowania studentów.
 
 
 ## Realizacja zadania wskazanego przez prowadzącego
