@@ -1,9 +1,9 @@
 ![alt text](images/fers_header.jpg "Title") 
 # Wprowadzenie do programowania 
-# Instrukcja do ćwiczenia laboratoryjnego nr 4
-## Temat: Struktury i wskaźniki w języku C
-## Politechnika Gdańska, Wydział Elektroniki, Telekomunikacji i Informatyki, Katedra Inzynierii Biomedycznej
-## Opracował: prof. dr hab. inż. Jacek Rumiński
+#### Instrukcja do ćwiczenia laboratoryjnego nr 4
+#### Temat: Struktury i wskaźniki w języku C
+#### Politechnika Gdańska, Wydział Elektroniki, Telekomunikacji i Informatyki, Katedra Inzynierii Biomedycznej
+#### Opracował: prof. dr hab. inż. Jacek Rumiński
 
 
 ### Spis treści
