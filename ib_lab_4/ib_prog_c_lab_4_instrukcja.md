@@ -1,5 +1,10 @@
 ![alt text](images/fers_header.jpg "Title") 
-# Instrukcja do Laboratorium 4
+# Wprowadzenie do programowania 
+# Instrukcja do ćwiczenia laboratoryjnego nr 4
+## Temat: Struktury i wskaźniki w języku C
+## Politechnika Gdańska, Wydział Elektroniki, Telekomunikacji i Informatyki, Katedra Inzynierii Biomedycznej
+## Opracował: prof. dr hab. inż. Jacek Rumiński
+
 
 ### Spis treści
 - [Wprowadzenie](#wprowadzenie)
@@ -200,6 +205,7 @@ Jak skompilować i uruchomić program?
 1. Otwórz terminal i przejdź do katalogu z projektem.
 2. Użyj polecenia `gcc -o lab_4 main.c student.c menu.c` do skompilowania programu. Upewnij się, że masz zainstalowany kompilator GCC (Linux, Mac OS, inne).
 3. Uruchom program poleceniem `./lab_4
+
 
 ## Praca samodzielna związana z rozbudową przykładowego projektu
 
