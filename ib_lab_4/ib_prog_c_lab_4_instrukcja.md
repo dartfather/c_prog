@@ -1,10 +1,13 @@
 ![alt text](images/fers_header.jpg "Title") 
 # Instrukcja do Laboratorium 4
 
-#### Spis treści
+### Spis treści
 - [Wprowadzenie](#wprowadzenie)
-- [Zadania](#zadania)
-- [Podsumowanie](#podsumowanie)
+- [Praca z przykładowym projektem wraz z wyjaśnieniami prowadzącego](#praca-z-przykładowym-projektem-wraz-z-wyjaśnieniami-prowadzącego)
+- [Prosta praca samodzielna zwiazana z rozbudową przykładowego projektu](#prosta-praca-samodzielna-zwiazana-z-rozbudową-przykładowego-projektu)
+- [Realizacja zadania wskazanego przez prowadzącego](#realizacja-zadania-wskazanego-przez-prowadzącego)
+- [Zadanie domowe](#zadanie-domowe)
+- [Literatura pomocnicza i załączniki](#literatura-pomocnicza-i-załączniki)
 
 ## Wprowadzenie
 Celem tego laboratorium jest utrwalenie wiedzy z wykładów oraz praktyczne zapoznanie się z ze złoonymi struktrami danych. 
@@ -36,7 +39,7 @@ Zamiast tak długiej nazwy własnego typu danych można uprościć składnię, d
 Operacje na strukturach wraz z wykorzystaniem wskaźników zostały omówione na wykładach. Przygotowując się do ćwiczenia laboratoryjnego wymagane jest powtórzenie tych zagadnień. Zachęcamy do wykonania wszystkich przykładów z wykładów, a poprzez wprowadzanie zmian w kodzie do samodzielnego sprawdzenia działania struktur i wskaźników.
 
 
-## Przebieg laboratorium
+#### Przebieg laboratorium
 
 1. Wprowadzenie prowadzącego
 2. Wejściówka
@@ -198,24 +201,56 @@ Jak skompilować i uruchomić program?
 2. Użyj polecenia `gcc -o lab_4 main.c student.c menu.c` do skompilowania programu. Upewnij się, że masz zainstalowany kompilator GCC (Linux, Mac OS, inne).
 3. Uruchom program poleceniem `./lab_4
 
+4. Prosta praca samodzielna zwiazana z rozbudową przykładowego projektu
+
+W ramach ćwiczenia laboratoryjnego należy samodzielnie rozbudować przykładowy projekt o dodatkową funkcjonalność. Proponowana funkcjonalność to dodanie możliwości wprowadzenia kodu przedmiotu, dla którego wystawiana jest ocena dla studenta. 
+W tym celu należy:
+1. Zmodyfikować strukturę `student_t`, dodając stosowne pole.
+2. Zmodyfikować funkcję `add_student()`, aby umożliwić wprowadzenie kodu przedmiotu.
+3. Zmodyfikować funkcję `list_students()`, aby wyświetlała kod przedmiotu wraz z innymi informacjami o studencie.
+4. Przetestować zmodyfikowany program, aby upewnić się, że nowa funkcjonalność działa poprawnie.
+
+Prowadzący może zaproponować inną funkcjonalność do dodania, w zależności od potrzeb i poziomu zaawansowania studentów.
 
 
-## Zadania
-1. **Zadanie 1**: Napisz program, który wypisuje na ekranie tekst "Hello, World!".
-2. **Zadanie 2**: Napisz program, który pobiera od użytkownika dwie liczby całkowite i wypisuje ich sumę.
-3. **Zadanie 3**: Napisz program, który pobiera od użytkownika liczbę całkowitą i wypisuje, czy jest ona parzysta czy nieparzysta.
-4. **Zadanie 4**: Napisz program, który pobiera od użytkownika liczbę całkowitą i wypisuje, czy jest ona liczbą pierwszą.
-5. **Zadanie 5**: Napisz program, który pobiera od użytkownika liczbę całkowitą i wypisuje jej silnię.
-6. **Zadanie 6**: Napisz program, który pobiera od użytkownika liczbę całkowitą i wyp
+## Realizacja zadania wskazanego przez prowadzącego
 
-<p style="color:blue">Make this text blue.</p>
+Po zapoznaniu się i zrozumieniu przykładowego projektu oraz wykonaniu prostej pracy samodzielnej, prowadzący zleci realizację konkretnego zadania związanego z obsługą struktur i wskaźników w języku C. Zadanie to może polegać na dodaniu nowej funkcjonalności do istniejącego projektu lub na stworzeniu nowego programu od podstaw, wykorzystującego struktury i wskaźniki.
 
+Przykładowe zadania mogą obejmować:
+- utworzenie struktury danych dla np. pacjenta:
 
+```C
+struct patient {
+    char id[12];  /* 11 chars for PESEL, and last char for '\0' */
+    char last_name[30];
+    char first_name[30];
+    unsigned short birth_year;
+    char icd10[6];
+};
 
-$${\color{red}Red}$$
+```
 
-## Podsumowanie
+- dodanie funkcji do zarządzania listą pacjentów (dodawanie, usuwanie, wyszukiwanie, aktualizacja danych),
+- implementację prostego wyszukiwania pacjenta po numerze PESEL,
+- itp.
 
---
-Markdown hacks:
-https://www.markdownguide.org/hacks/
+## Zadanie domowe
+
+Na zakończenie laboratorium, prowadzący zleci wykonanie zadania domowego, które pozwoli na utrwalenie zdobytej wiedzy i umiejętności. 
+Zadanie to polegać będzie na rozbudowie istniejącego projektu w szczególności o:
+- dodanie funkcji zapisu i odczytu listy studentów/pacjentów do/z pliku,
+- dodanie funkcji sortowania listy studentów/pacjentów według różnych kryteriów (np. nazwisko, numer albumu/PESEL, ocena/ICD10),
+- dodanie funkcji wyszukiwania studenta/pacjenta według różnych kryteriów (np. nazwisko, numer albumu/PESEL),
+
+Zadanie domowe w formie sprawozdania należy przesłać na wskazany adres serwisu eNauczanie w terminie do 7 dni od daty laboratorium. 
+
+Zasady oceniania ćwiczenia oraz zadania domowego dostępne są na stronie kursu w serwisie eNauczanie.
+
+## Literatura pomocnicza i załączniki
+
+- Materiały z wykładów (serwis eNauczanie
+- Książka: Brian W. Kernighan, Dennis M. Ritchie, "Języka ANSI C. Programowanie", Wydawnictwo Helion, 2020,
+- Dokumentacja języka C: https://en.cppreference.com/w/c
+- [Struktury w C - W3Schools](https://www.w3schools.com/c/c_structs.php)
+- [Przykładowy projekt na GitHub](https://github.com/dartfather/c_prog.git)
