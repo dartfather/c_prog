@@ -4,7 +4,7 @@
 ### Spis treści
 - [Wprowadzenie](#wprowadzenie)
 - [Praca z przykładowym projektem wraz z wyjaśnieniami prowadzącego](#praca-z-przykładowym-projektem-wraz-z-wyjaśnieniami-prowadzącego)
-- [Prosta praca samodzielna zwiazana z rozbudową przykładowego projektu](#prosta-praca-samodzielna-zwiazana-z-rozbudową-przykładowego-projektu)
+- [Praca samodzielna związana z rozbudową przykładowego projektu](#praca-samodzielna-związana-z-rozbudową-przykładowego-projektu)
 - [Realizacja zadania wskazanego przez prowadzącego](#realizacja-zadania-wskazanego-przez-prowadzącego)
 - [Zadanie domowe](#zadanie-domowe)
 - [Literatura pomocnicza i załączniki](#literatura-pomocnicza-i-załączniki)
@@ -201,7 +201,7 @@ Jak skompilować i uruchomić program?
 2. Użyj polecenia `gcc -o lab_4 main.c student.c menu.c` do skompilowania programu. Upewnij się, że masz zainstalowany kompilator GCC (Linux, Mac OS, inne).
 3. Uruchom program poleceniem `./lab_4
 
-4. Prosta praca samodzielna zwiazana z rozbudową przykładowego projektu
+## Praca samodzielna związana z rozbudową przykładowego projektu
 
 W ramach ćwiczenia laboratoryjnego należy samodzielnie rozbudować przykładowy projekt o dodatkową funkcjonalność. Proponowana funkcjonalność to dodanie możliwości wprowadzenia kodu przedmiotu, dla którego wystawiana jest ocena dla studenta. 
 W tym celu należy:
